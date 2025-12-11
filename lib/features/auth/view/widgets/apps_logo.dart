@@ -22,7 +22,7 @@ class AppsLogo extends StatelessWidget {
         ),
         const SizedBox(height: 43),
         Text(
-          'Do your best work with Vibetask',
+          'Manage your time like CEO with Vibetask',
           textAlign: TextAlign.center,
           style: GoogleFonts.alice(
             fontWeight: FontWeight.w600,
