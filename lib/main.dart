@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vibetask/features/auth/view/pages/google_signIn.dart';
+
+import 'package:vibetask/features/home/view/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Task AI',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const GoogleSignin(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const HomePage(),
     );
   }
 }
